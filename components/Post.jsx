@@ -4,6 +4,7 @@ import moment from "moment";
 
 const Post = ({
   title,
+  author,
   date,
   content,
   showHomeButton = false,
@@ -21,21 +22,27 @@ const Post = ({
         </div>
       )}
       <div className="flex justify-between mb-2">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <i>{moment(date).format("MMM-DD-YYYY")}</i>
       </div>
+      <hr />
       <section>
-        {!isIndex || content.lenght < 200 ? (
+        {!isIndex || content.lenght < 300 ? (
           <p>{content}</p>
         ) : (
           <p>
-            {content.substring(0, 200)}{" "}
+            {content.substring(0, 300)}{" "}
             <span className="text-blue-600 hover:text-red-600">
               ...show more
             </span>
           </p>
         )}
       </section>
+      {author && (
+        <footer>
+          <i className="text-gray-500">{author}</i>
+        </footer>
+      )}
     </article>
   );
 };
