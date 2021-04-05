@@ -6,8 +6,8 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <header className="w-full bg-blue-600">
-        <div className="flex gap-5 justify-center items-center">
+      <header className="w-full bg-blue-600 px-3">
+        <div className="flex justify-center items-center space-x-5">
           <SiNextDotJs />
           <h1 className="text-5xl font-bold text-center text-white py-7">
             My superBlog
