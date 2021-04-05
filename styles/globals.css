@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 hover:text-blue-400;
+  }
+  button {
+    @apply bg-blue-600 text-white hover:bg-blue-400 rounded py-1 px-2;
+  }
+  header svg {
+    @apply text-white h-9 w-auto;
+  }
+}
