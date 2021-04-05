@@ -15,6 +15,14 @@ export default function About() {
           in reprehenderit labore repellendus accusantium natus cupiditate eum
           doloribus neque incidunt tempore rerum, iste quasi! Quae facilis
           molestias esse eum eveniet.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+          in reprehenderit labore repellendus accusantium natus cupiditate eum
+          doloribus neque incidunt tempore rerum, iste quasi! Quae facilis
+          molestias esse eum eveniet.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+          in reprehenderit labore repellendus accusantium natus cupiditate eum
+          doloribus neque incidunt tempore rerum, iste quasi! Quae facilis
+          molestias esse eum eveniet.
         </p>
       </main>
     </div>

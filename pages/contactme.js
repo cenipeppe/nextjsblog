@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { HiOutlineMail } from "@react-icons/all-files/hi/HiOutlineMail";
+import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 import { HiOutlinePhone } from "@react-icons/all-files/hi/HiOutlinePhone";
 import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
@@ -14,9 +14,9 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="mx-auto my-20 w-9/12 grid grid-cols-12">
+      <main className="mx-auto my-20 w-9/12 grid grid-cols-12 gap-5">
         <div className="col-span-6 flex gap-3 items-center mb-10">
-          <HiOutlineMail />
+          <MdEmail />
           <span>E-mail: info@email.com</span>
         </div>
         <div className="col-span-6 flex gap-3 items-center mb-10">

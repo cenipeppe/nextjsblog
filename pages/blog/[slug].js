@@ -11,7 +11,7 @@ export default function BlogPage({ title, date, content }) {
       </Head>
 
       <main className="mx-auto my-7 w-9/12">
-        <Post title={title} date={date} content={content} />
+        <Post title={title} date={date} content={content} showHomeButton />
       </main>
     </>
   );
