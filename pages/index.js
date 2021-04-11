@@ -42,7 +42,6 @@ export async function getStaticProps(context) {
   allPosts = allPosts.map((post) => {
     const { data, slug } = post;
     const date = data.date.toString();
-    console.log(data.description)
     return {
       title: data.title,
       date,
