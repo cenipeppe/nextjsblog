@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Post from "../../components/Post";
 import { getAllPosts } from "../../lib/data";
+import renderToString from "next-mdx-remote/render-to-string";
 
 export default function BlogPage(props) {
   return (
-    <>
+    <> 
       <Head>
         <title>{props.title}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -20,13 +21,14 @@ export default function BlogPage(props) {
 export async function getStaticProps(context) {
   const { params } = context;
   const allPosts = getAllPosts();
-  const { data, content } = allPosts.find((post) => post.slug === params.slug)
-  
+  const { data, content } = allPosts.find((post) => post.slug === params.slug);
+  const mdxSource = await renderToString(content);
+
   return {
     props: {
       ...data,
       date: data.date.toString(),
-      content,
+      content: mdxSource,
     }, // will be passed to the page component as props
   };
 }

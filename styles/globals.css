@@ -12,13 +12,48 @@
   h3 {
     @apply text-lg;
   }
+  h4, h5, h6 {
+    @apply text-sm;
+  }
   a {
     @apply text-blue-600 hover:text-blue-400;
+  }
+  ul {
+    @apply list-disc ml-7;
+  }
+  ol {
+    @apply list-decimal ml-7;
   }
   button {
     @apply bg-blue-600 text-white hover:bg-blue-400 rounded py-1 px-2;
   }
+  button.btnghost {
+    @apply bg-white text-gray-600 hover:bg-gray-800 hover:text-gray-300 rounded py-1 px-2;
+  }
   header svg {
     @apply text-white h-9 w-auto;
   }
+  blockquote p {
+    @apply text-blue-600;
+  }
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 0.9rem;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
