@@ -9,11 +9,9 @@ const HomeCover = ({ src, className, children }) => {
         width: "100vw",
         height: "calc(100vh - 150px)",
       }}
-      className={`${className} homeCover`}
+      className={className}
     >
-      <div className="w-full h-full flex flex-col justify-around items-center">
         {children}
-      </div>
     </div>
   );
 };

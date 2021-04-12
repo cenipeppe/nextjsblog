@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomeCover src={srcImg}>
+      <HomeCover src={srcImg} className="flex flex-col justify-around items-center">
         <h2 className="bg-white py-2 px-4 text-5xl">
           A wonderful blog made by me!
         </h2>
