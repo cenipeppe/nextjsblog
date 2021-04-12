@@ -68,7 +68,7 @@ export async function getStaticProps(context) {
     const { data, slug } = post;
     const date = data.date.toString();
     return {
-      title: data.title,
+      ...data,
       date,
       content: data.description,
       slug,
