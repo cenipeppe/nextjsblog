@@ -6,7 +6,7 @@ const HomeCover = ({ src, className, children }) => {
       style={{
         background: `url(${src}) no-repeat center center fixed`,
         backgroundSize: "cover",
-        width: "100vw",
+        width: "100%",
         height: "calc(100vh - 150px)",
       }}
       className={className}
