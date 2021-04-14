@@ -4,14 +4,35 @@ const HomeCover = ({ src, className, children }) => {
   return (
     <div
       style={{
-        background: `url(${src}) no-repeat center center fixed`,
+        background: "black",
         backgroundSize: "cover",
         width: "100%",
         height: "calc(100vh - 150px)",
+        position: "relative",
       }}
-      className={className}
-    >
+      >
+      <div
+        style={{
+          background: `url(${src}) no-repeat center center fixed`,
+          backgroundSize: "cover",
+          opacity: "30%",
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          zIndex: "1",
+        }}
+        />
+      <div
+        className={className}
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          zIndex: "2",
+        }}
+      >
         {children}
+      </div>
     </div>
   );
 };

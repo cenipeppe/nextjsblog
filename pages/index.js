@@ -25,17 +25,18 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HomeCover src={srcImg} className="flex flex-col justify-around items-center">
-        <h2 className="bg-white py-2 px-4 text-5xl">
+      <HomeCover src={srcImg} className="flex flex-col justify-center items-center p-5">
+        {/* <h2 className="bg-white mb-10 py-2 px-4 text-5xl shadow"> */}
+        <h2 className="text-white mb-10 text-5xl shadow">
           A wonderful blog made by me!
         </h2>
         <button
-          className="bg-yellow-400 rounded py-3 px-6 flex items-center justify-between"
+          className="bg-yellow-400 rounded py-3 px-6 flex items-center justify-between shadow"
           type="button"
           onClick={executeScroll}
         >
-          <IoIosArrowDown />
-          <span className="ml-2">Read the blog!</span>
+          <IoIosArrowDown className="text-yellow-900"/>
+          <span className="ml-2 text-yellow-900">Read the blog!</span>
         </button>
       </HomeCover>
 
