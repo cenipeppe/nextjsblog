@@ -1,6 +1,9 @@
 import React from "react";
 
-const HomeCover = ({ src, className, children }) => {
+const srcImg =
+    "https://images.unsplash.com/photo-1617641199643-ad24e3c12744?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80";
+
+const HeadCover = ({ src = srcImg, className, children, }) => {
   return (
     <div
       style={{
@@ -23,7 +26,7 @@ const HomeCover = ({ src, className, children }) => {
         }}
         />
       <div
-        className={className}
+        className={`flex flex-col justify-center items-center p-5 shadow ${className}`}
         style={{
           width: "100%",
           height: "100%",
@@ -37,4 +40,4 @@ const HomeCover = ({ src, className, children }) => {
   );
 };
 
-export default HomeCover;
+export default HeadCover;

@@ -12,7 +12,7 @@ export default function BlogPage(props) {
       </Head>
 
       <main className="mx-auto my-7 w-9/12">
-        <Post {...props} showHomeButton />
+        <Post {...props} />
       </main>
     </>
   );

@@ -22,7 +22,7 @@ const Post = ({
   return (
     <>
       <article className="my-10">
-        {showHomeButton && (
+        {!isIndex && (
           <div className="flex justify-end">
             <Link href="/">
               <button className="flex justify-center p-1">
@@ -31,8 +31,8 @@ const Post = ({
             </Link>
           </div>
         )}
-        <div className="flex justify-between mb-2">
-          <h2>{title}</h2>
+        <div className={`flex justify-between mb-${isIndex ? "2" : "5"}`}>
+          {isIndex ? <h3>{title}</h3> : <h1>{title}</h1>}
           <i>{moment(date).format("MMM-DD-YYYY")}</i>
         </div>
         <hr />

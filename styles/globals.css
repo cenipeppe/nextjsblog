@@ -4,16 +4,19 @@
 
 @layer base {
   h1 {
-    @apply text-3xl;
+    @apply text-5xl font-semibold;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-3xl font-semibold;
   }
   h3 {
-    @apply text-lg;
+    @apply text-2xl font-semibold;
   }
-  h4, h5, h6 {
-    @apply text-sm;
+  h4 {
+    @apply text-lg font-semibold;
+  }
+  h5, h6 {
+    @apply text-sm font-semibold;
   }
   a {
     @apply text-blue-600 hover:text-blue-400;
