@@ -31,10 +31,10 @@ const Post = ({
             </Link>
           </div>
         )}
-        <div className={`flex justify-between mb-${isIndex ? "2" : "5"}`}>
+        <div className={`mb-${isIndex ? "2" : "5"}`}>
           {isIndex ? <h3>{title}</h3> : <h1>{title}</h1>}
-          <i>{moment(date).format("MMM-DD-YYYY")}</i>
         </div>
+          <i className="text-sm text-gray-500">{moment(date).format("MMM-DD-YYYY")}</i>
         <hr />
         <section>
           {hydratedContent}
