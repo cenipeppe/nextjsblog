@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { HiHome } from "@react-icons/all-files/hi/HiHome";
 import moment from "moment";
 import hydrate from "next-mdx-remote/hydrate";
@@ -9,7 +8,6 @@ const Post = ({
   author,
   date,
   content,
-  showHomeButton = false,
   isIndex = false,
 }) => {
   let hydratedContent;

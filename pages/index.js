@@ -29,12 +29,12 @@ export default function Home({ posts }) {
           A wonderful blog made by me!
         </h1>
         <button
-          className="bg-yellow-400 rounded py-3 px-6 flex items-center justify-between shadow"
+          className="bg-yellow-400 hover:bg-yellow-900 text-yellow-900 hover:text-yellow-400 rounded py-3 px-6 flex items-center justify-between shadow"
           type="button"
           onClick={executeScroll}
         >
-          <IoIosArrowDown className="text-yellow-900" />
-          <strong className="ml-2 text-yellow-900">Read the blog!</strong>
+          <IoIosArrowDown />
+          <strong className="ml-2">Read the blog!</strong>
         </button>
       </HeadCover>
 
