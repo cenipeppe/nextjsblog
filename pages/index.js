@@ -47,7 +47,7 @@ export default function Home({ posts }) {
       >
         <div className="lg:col-span-3 md:col-span-2 sm:col-span-1 mb-5 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
           <div
-            className="col-span-1 w-full"
+            className="col-span-1 w-full shadow"
             style={{
               background: `url("https://images.unsplash.com/photo-1616149562385-1d84e79478bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center center`,
               backgroundSize: "cover",
@@ -74,17 +74,19 @@ export default function Home({ posts }) {
         <h2 className="lg:col-span-3 md:col-span-2 sm:col-span-1 mb-5">
           The lastest articles of blog
         </h2>
-        {posts.map((post) => {
+        {posts.map((post, index) => {
           const content = post.content.slice(0, 150);
           const postProps = { ...post, content };
           return (
-            <Link href={`/blog/${post.slug}`} key={post.slug}>
+            index < 6 ? <Link href={`/blog/${post.slug}`} key={post.slug}>
               <article
                 className={`col-span-1 border border-gray-400 hover:border-yellow-800 rounded shadow
               hover:bg-yellow-200 hover:text-yellow-900 py-1 px-2 cursor-pointer `}
               >
                 <Post {...postProps} isIndex />
               </article>
+            </Link> : <Link href={`/blog/${post.slug}`} key={post.slug}>
+              <h3 className="lg:col-span-3 md:col-span-2 sm:col-span-1">{post.title} <i className="font-light text-gray-600">{moment(post.date).format("MMM-DD-YYYY")}</i></h3>
             </Link>
           );
         })}

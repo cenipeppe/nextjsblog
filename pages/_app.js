@@ -34,26 +34,26 @@ function MyApp({ Component, pageProps }) {
         </nav>
       </header>
       <Component {...pageProps} />
-      <footer className="w-full px-5 py-10 grid grid-cols-12 gap-10 bg-gray-700 text-white">
-        <div className="col-span-6 flex justify-end gap-3 items-center mb-10">
-          <span>E-mail: info@email.com</span>
+      <footer className="w-full px-5 py-10 grid grid-cols-12 gap-5 bg-gray-700 text-white">
+        <div className="col-span-6 flex gap-3 items-center mb-10">
           <MdEmail />
+          <span>E-mail: info@email.com</span>
         </div>
         <div className="col-span-6 flex gap-3 items-center mb-10">
           <HiOutlinePhone />
           <span>+123 456 789</span>
         </div>
-        <div className="col-span-6 flex justify-end gap-3 items-center mb-10">
-          <span>MyName MySurname</span>
+        <div className="col-span-6 flex gap-3 items-center mb-10">
           <FaFacebook />
+          <span>MyName MySurname</span>
         </div>
         <div className="col-span-6 flex gap-3 items-center mb-10">
           <FaInstagram />
           <span>MyName MySurname</span>
         </div>
-        <div className="col-span-6 flex justify-end gap-3 items-center mb-10">
-          <span>MyName MySurname</span>
+        <div className="col-span-6 flex gap-3 items-center mb-10">
           <FaLinkedin />
+          <span>MyName MySurname</span>
         </div>
         <div className="col-span-6 flex gap-3 items-center mb-10">
           <SiTiktok />
