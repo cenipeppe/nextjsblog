@@ -72,7 +72,7 @@ export default function Home({ posts }) {
         </div>
         <hr className="lg:col-span-3 md:col-span-2 sm:col-span-1" />
         <h2 className="lg:col-span-3 md:col-span-2 sm:col-span-1 mb-5">
-          The lastest articles of blog
+          The lastest blog's articles
         </h2>
         {posts.map((post, index) => {
           const content = post.content.slice(0, 150);
